@@ -14,7 +14,7 @@ func (s Square) Perimeter() int {
 	return s.a + s.b
 }
 func main() {
-	fmt.Println("hello, world")
+	fmt.Println("hello, go,wnd！")
 	var s Geometry = Square{5, 10}
 	v, ok := s.(Square)
 	fmt.Println(v, ok)
