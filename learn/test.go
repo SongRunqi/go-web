@@ -6,6 +6,7 @@ import "fmt"
 type Geometry interface {
 	Perimeter() int
 }
+type Rectangle struct{}
 
 // Square 是一个类，实现了Geometry这个接口，因为他实现了Geometry的所有方法
 type Square struct {
@@ -18,11 +19,18 @@ func (s Square) Perimeter() int {
 	return s.a + s.b
 }
 
+func isNull(a interface{}) bool {
+	return a == nil
+}
+
 // end Square
 
 func main() {
 	fmt.Println("hello, go,wnd！")
 	var s Geometry = Square{5, 10}
-	v, ok := s.(Square)
+	v, ok := s.(Geometry)
 	fmt.Println(v, ok)
+	var b *Square
+	isNill := isNull(b)
+	fmt.Println(isNill)
 }
