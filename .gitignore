@@ -3,3 +3,13 @@
 
 # JetBrains IDEs
 .idea/
+
+# chat-ui Vue project
+chat-ui/node_modules/
+chat-ui/dist/
+chat-ui/.vscode/
+chat-ui/.env.local
+chat-ui/.env.*.local
+chat-ui/npm-debug.log*
+chat-ui/yarn-debug.log*
+chat-ui/yarn-error.log*
